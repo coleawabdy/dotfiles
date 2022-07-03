@@ -1,0 +1,19 @@
+window:
+  padding:
+    x: 16
+    y: 16
+  dynamic_padding: true
+  decorations: full
+  startup_mode: Windowed
+  opacity: 0.82
+font:
+  normal:
+    family: Hack
+    style: Light
+  bold:
+    family: Hack
+    style: medium
+  italic:
+    family: Hack
+    style: "Light Italic"
+  size: 14.0
