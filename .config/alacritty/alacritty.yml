@@ -5,7 +5,7 @@ window:
   dynamic_padding: true
   decorations: full
   startup_mode: Windowed
-  opacity: 0.82
+  opacity: 0.92
 font:
   normal:
     family: Hack
@@ -17,3 +17,5 @@ font:
     family: Hack
     style: "Light Italic"
   size: 14.0
+shell:
+  program: /bin/zsh
