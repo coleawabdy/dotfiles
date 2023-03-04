@@ -10,7 +10,11 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ] && [ "$(tty)" == "/dev/tty1" ]; then
+if [ "$(tty)" == "/dev/tty1" ]; then
+	nm-applet &
+
 	export WLR_NO_HARDWARE_CURSORS=1
 	exec sway --unsupported-gpu
 fi
+
+export GPG_TTY=$(tty)
