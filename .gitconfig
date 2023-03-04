@@ -3,8 +3,3 @@
 [user]
 	name = Cole Awabdy
 	email = contact@coleawabdy.com
-[credential]
-	helper = 
-	helper = /usr/bin/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
