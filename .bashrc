@@ -9,6 +9,8 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+export GPG_TTY=$(tty)
+export EDITOR=vim
 
 if [ "$(tty)" == "/dev/tty1" ]; then
 	nm-applet &
@@ -17,4 +19,4 @@ if [ "$(tty)" == "/dev/tty1" ]; then
 	exec sway --unsupported-gpu
 fi
 
-export GPG_TTY=$(tty)
+
