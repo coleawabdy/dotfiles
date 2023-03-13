@@ -10,7 +10,9 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export GPG_TTY=$(tty)
-export EDITOR=vim
+export EDITOR=nvim
+
+export PATH="$HOME/.cargo/bin:$PATH"
 
 if [ "$(tty)" == "/dev/tty1" ]; then
 	nm-applet &
